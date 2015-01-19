@@ -1,5 +1,5 @@
 ### Introduction
-Matrix inversion is usually a costly computation. And in some cases it is better to cache results of the previous work than compute it repeatedly. These functions solve the problem by caching inverse matrix computed in function `makeCacheMatrix()`.
+Matrix inversion is usually a costly computation. And in some cases it is better to cache results of the previous work than compute it repeatedly. These functions solve the problem by caching inverse matrix computed in function `cacheSolve()`.
 
 #### The project has the following functions:
 1. `makeCacheMatrix`: This function creates a special "matrix" object that can cache its inverse.
