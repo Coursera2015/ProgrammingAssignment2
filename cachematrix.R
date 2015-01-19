@@ -28,11 +28,11 @@ makeCacheMatrix <- function(x = matrix()){
 cacheSolve <- function(x, ...) {
   mtx <- x$getsolve()             # Get inversed matrix from makeCacheMatrix(). If cache is empty mtx = NULL, if not - mtx contiens matrix.
   if(!is.null(mtx)) {             # Verify if mtx is NULL. If "no" - function cacheSolve() returns mtx.
-    message("getting cached data")# And print "getting cached data"
+    message("getting cached data")# And print "getting cached data".
     return(mtx)
   }
-  data <- x$get()                 # Get data from start matrix via makeCacheMatrix()  
-  mtx <- solve(data, ...)         # Make inversed matrix from start matrix
-  x$setsolve(mtx)                 # Put inversed matrix to cache in makeCacheMatrix()
-  mtx                             # Return inversed matrix mtx
+  data <- x$get()                 # Get data from start matrix via makeCacheMatrix().
+  mtx <- solve(data, ...)         # Make inversed matrix from start matrix.
+  x$setsolve(mtx)                 # Put inversed matrix to cache in makeCacheMatrix().
+  mtx                             # Return inversed matrix mtx.
 }
