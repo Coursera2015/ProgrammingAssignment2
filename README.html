@@ -70,17 +70,18 @@ img {
 <li><code>makeCacheMatrix</code>: This function creates a special “matrix” object that can cache its inverse.</li>
 <li><code>cacheSolve</code>: This function computes the inverse of the special “matrix” returned by <code>makeCacheMatrix</code>. If the inverse has already been calculated (and the matrix has not changed), then <code>cacheSolve</code> retrieves the inverse from the cache.</li>
 </ol>
-<p>** Computing the inverse of a square matrix is done with the <code>solve</code> function in R. It is assumed that the matrix is always invertible.</p>
+<p>Computing the inverse of a square matrix is done with the <code>solve</code> function in R. It is assumed that the matrix is always invertible.</p>
 </div>
 <div id="editing-files-and-commiting-to-github" class="section level4">
 <h4>Editing files and commiting to Github:</h4>
 <ol style="list-style-type: decimal">
 <li>Start Git via GitBush (<code>$ git init</code>)**.</li>
+<li>Change working directory (<code>$ cd working_directory</code>).</li>
 <li>Fork the GitHub repository <a href="https://github.com/rdpeng/ProgrammingAssignment2"><a href="https://github.com/rdpeng/ProgrammingAssignment2">https://github.com/rdpeng/ProgrammingAssignment2</a></a> to create a copy in personal account.</li>
 <li>Clone forked GitHub repository to local computer (<code>$ git clone https://github.com/Coursera2015/ProgrammingAssignment2</code>).</li>
 <li>Edit the R files <code>cachematrix.R</code> and <code>README.md</code> in RStudio accoding to task.</li>
-<li>Add files into git repository (<code>$ git add all</code>).</li>
-<li>Commit new files to git (<code>$ git commit all -m &quot;Last version&quot;</code>).</li>
+<li>Add files into git repository (<code>$ git add --all</code>).</li>
+<li>Commit new files to git (<code>$ git commit -m &quot;Last version&quot;</code>).</li>
 <li>Push local repository to remote GitHub (<code>$ git push</code>).</li>
 </ol>
 <p>** You can download Git software here: <a href="http://git-scm.com/"><a href="http://git-scm.com/">http://git-scm.com/</a></a>.</p>
